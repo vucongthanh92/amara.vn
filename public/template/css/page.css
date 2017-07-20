@@ -1,0 +1,45 @@
+@charset "utf-8";
+.paging
+{
+	height:auto; 
+	margin:0; 
+	margin-top:10px; 
+	text-align:center; 
+	clear:both; 
+	color:#8CC94A; 
+	padding-bottom:10px;
+}
+.paging a 
+{
+	text-decoration: 
+	none;padding-bottom:4px;
+	margin-left:3px; 
+	margin-left:5px;
+    padding:2px; 
+	border:solid 1px #8CC94A;
+	color:#8CC94A;
+	padding-left:4px;
+	padding-right:4px;
+}
+.paging .current 
+{
+	text-decoration: none;
+	padding-left:4px; 
+	padding-right:4px;
+	padding-top:4px; 
+	padding-bottom:4px;
+	margin-left:5px; 
+	color:#FFF;  
+	font-weight:bold;
+	background-color:#8CC94A;	 
+    padding:2px; 
+	border:solid 1px #8CC94A;  
+	padding-left:4px; 
+	padding-right:4px; 
+}
+.paging a:hover 
+{
+	background-color:#8CC94A; 
+	color:#FFF;  
+	font-weight:bold;
+}

@@ -1,0 +1,6 @@
+user-agent:*
+allow: /
+user-agent: MJ12bot
+disallow: /
+
+Sitemap: http://amara.vn/sitemap.xml

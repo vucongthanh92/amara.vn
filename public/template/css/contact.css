@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+/* lien he */
+.thongtinlienhe{
+	margin-top:10px;
+	*width:240px;
+}
+.formlienhe{
+	float:left;
+	*margin:0;
+}
+.formlienhe label{
+	width:120px;
+	float:left;
+}
+.formlienhe p{
+	margin:10px 0;
+}
+.formlienhe .inputtext{
+	border:1px #9c9c9c inset;
+	width:420px;
+}
+.formlienhe .bgtextarea{
+	background:url(../images/bg-textarea.jpg) repeat center -5px;
+	height:160px;
+	line-height:23px;
+	margin-top:5px;
+	width:540px;
+	border:1px #9c9c9c inset;
+}
+.bando{
+	clear:left;
+	margin-top:20px;
+}
+.sao{color:red;}

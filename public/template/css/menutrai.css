@@ -1,0 +1,29 @@
+.arrowlistmenu {
+	width:207px; overflow:hidden;
+}
+
+.menuheader { display:block; color:#333333; font-size:13px; background-image:url("../images/list_cong.png"); background-repeat:no-repeat; padding-left:25px; padding-top:8px; padding-bottom:8px; border-bottom:dotted 1px #CCCCCC; background-position:10px 10px; width:160px; margin-top:0px; margin-bottom:0px; cursor:pointer; width:182px; background-color:#3399ff;}
+.menuheader a{ font-weight:300; font-family:Arial, Helvetica, sans-serif; color:#FFF;}
+.categoryitems { margin:0px; margin-left:-40px; display:none;}
+.categoryitems li { list-style:none; }
+.categoryitems li a {  background-image:url("../images/icon_news.gif"); background-repeat:no-repeat; background-position:15px 10px ; padding:5px; padding-left:30px;  text-decoration:none;  padding-bottom:8px; border-bottom:dotted 1px #CCCCCC; width:185px; overflow:hidden; display:block; background-color:#3399ff; color:#FFF; }
+ /* tooltip-------------*/
+/* override the arrow image of the tooltip */
+.stickytooltip{
+border:solid 1px #cecccd;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px #888;
+box-shadow: 0 0 5px #888;
+display:none;
+position:absolute;
+display:none;
+background:white;
+z-index:3000;
+width:250px;
+text-align:left;
+padding:5px;
+padding-top:10px;
+padding-top:0px;
+overflow:hidden;
+height:200px;
+}

@@ -1,0 +1,213 @@
+div.form {
+    font-family: Tahoma,Geneva,sans-serif;
+    margin: 0 auto;
+    width: 95%;
+}
+
+div.row {
+    font-size: 12px;
+    margin: 7px 0 5px;
+    padding-left: 81px;
+    position: relative;
+    text-align: left;
+}
+
+span.row_L {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bolder;
+    left: 0;
+    padding-top: 9px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+.other_color_star {
+    color: #FF0000 !important;
+    font-size: 10px !important;
+    margin-left: 2px;
+    vertical-align: top;
+}
+
+div.row input.text {
+    border: 1px solid #D8D3D0;
+    border-radius: 3px 3px 3px 3px;
+    color: #A9A9A9;
+    height: 32px;
+    outline: medium none;
+    padding-left: 5px;
+    width: 99%;
+}
+p.note {
+    padding: 5px 0 12px;
+}
+p.note1 {
+    font-size: 11px;
+    padding: 9px 0;
+}
+.error {
+    background-color: #FFE9E9;
+    border-bottom: 1px solid #DD0000;
+    border-top: 1px solid #DD0000;
+    color: #FF0000;
+    margin: 5px auto auto;
+    padding: 3px 0 3px 10px;
+    text-align: left;
+    width: 90%;
+}
+.sercesful {
+	background-color: #d8e9ff;
+    border-bottom: 1px solid #3474c2;
+    border-top: 1px solid #3474c2;
+    color: #0d72d9;
+    margin: 5px auto auto;
+    padding: 3px 0 3px 10px;
+    text-align: left;
+    width: 90%;
+}
+.gioitinh {
+    width: 100%;
+}
+div.row select {
+    border: 1px solid #D8D3D0;
+    border-radius: 3px 3px 3px 3px;
+    color: #A9A9A9;
+    font-size: 12px;
+    height: 32px;
+    padding: 7px 5px 5px 0;
+}
+span.peo2 {
+	background: url(../images/peo2.png) no-repeat left top;
+	background-size: 30px 30px;
+	height: 30px!important;
+	width: 30px;
+	border: 0;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+}
+.text_are {
+ 	border: 1px solid #D8D3D0;
+    border-radius: 3px 3px 3px 3px;
+    color: #A9A9A9;
+    height: 82px;
+    outline: medium none;
+    padding-left: 5px;
+    width: 99%;
+}
+/*-------------------------------*/
+
+ul.list_city {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+ul.list_city li {
+    background: url("../images/menuleft_M.png") repeat-x scroll center top / auto 34px transparent;
+    clear: both;
+    display: block;
+    height: 34px;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    position: relative;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+ul.list_city span.list_city_L {
+    background: url("../images/menuleft_L.png") no-repeat scroll center top / 2px auto transparent;
+    display: block;
+    float: left;
+    height: 34px;
+    width: 3px;
+}
+
+ul.list_city span.list_city_M2 {
+    color: #494949;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 0;
+    text-align: left;
+}
+
+ul.list_city span.list_city_R {
+    background: url("../images/menuleft_R.png") no-repeat scroll center top / 2px 34px transparent;
+    display: block;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
+ul.list_city a {
+    color: #555555;
+    text-decoration: none;
+}
+ul.list_city span.list_city_M2 img {
+    margin-right: 5px;
+    margin-top: 5px;
+    vertical-align: baseline;
+	border:none;
+}
+ul.list_city span.list_city_M2 span {
+    position: absolute;
+    top: 10px;
+}
+
+
+div.index_header1 {
+    background: url("../images/menuleft_M.png") repeat-x scroll center top transparent;
+    border-bottom: 1px solid #D2D2D2;
+    height: 31px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    text-align: center;
+    width: 100%;
+}
+
+div.header {
+    margin: 0 auto;
+    width: 97%;
+}
+
+p.logo {
+    float: left;
+    text-align: left;
+}
+
+input.btn_back {
+    background: url("../images/back.png") no-repeat scroll left top / 44px 31px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 31px !important;
+    margin-left: 5px;
+    text-transform: uppercase;
+    width: 44px;
+}
+p.text_top {
+    color: #66AC2E;
+    float: right;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 6px;
+    text-align: right;
+    width: 75%;
+}
+div.row .ngaysinh {
+    width: 32%;
+}
+.email {
+    position: absolute;
+    top: 9px;
+}

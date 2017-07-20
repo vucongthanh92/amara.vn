@@ -1,0 +1,68 @@
+<style type="text/css">
+*{ text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+td { text-align:left}
+label {font-weight:bold;}
+.donhang table {   
+	border-collapse: collapse;
+    text-align: center;
+}
+.donhang td,th { 
+    border-color: #DCDCDC;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 5px;
+	font-size:12px;
+}
+</style>
+
+<table border="0" width="500" style="text-align:left">
+   <tr>
+       <td><p style=" text-align:left; font-weight:bold; font-size:18px; color:#09638E">ĐƠN ĐẶT HÀNG TỪ AMARA VIỆT NAM - AMARA.VN</p></td>
+   </tr>
+   <tr>
+       <td><label>THÔNG TIN ĐƠN HÀNG</label> </td>
+   </tr>
+</table>
+
+<table width="550"  cellspacing="0" cellpadding="0" border="1" >
+   <tbody>
+   <tr class="bg_tren">
+       <th width="15">STT</th>
+       <th width="150">Tên sản phẩm</th>
+       <th>Số lượng</th>
+       <th>Giá</th>
+   </tr>
+   {thongtinsanpham}
+   <tr style="border-top: solid 1px #CCC;" >
+       <td colspan="3" align="right">Tổng giá trị đơn hàng: </td> 
+	   <td colspan="2" style="color:#FF0000;font-size:12px; font-weight:bold;" >{tongdonhang} VNĐ</td> 
+   </tr>
+   </tbody>
+</table>
+
+<table width="550"  cellspacing="0" cellpadding="0" border="0" >
+   <tr>
+       <td colspan="2"><label>THÔNG TIN NGƯỜI ĐẶT HÀNG</label> </td>
+   </tr>
+   <tr>
+       <td><label>Họ tên:</label> </td><td>{hoten}</td>
+   </tr>
+   <tr>
+       <td><label>Email: </label></td><td>{email}</td>
+   </tr>
+   <tr>
+       <td><label>Địa chỉ:</label> </td><td>{diachi}</td>
+   </tr>
+   <tr>
+       <td><label>Điện thoại:</label> </td><td>{dienthoai}</td>
+   </tr>
+   <tr>
+       <td><label>Phương thức thanh toán:</label> </td><td>{phuongthucthanhtoan}</td>
+   </tr>
+   <tr>
+       <td><label>Ghi chú:</label></td><td>{noidung}</td>
+   </tr>
+</table>

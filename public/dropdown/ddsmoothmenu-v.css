@@ -1,0 +1,57 @@
+.ddsmoothmenu-v{
+	clear:left;
+	margin-bottom:10px;
+}
+
+.ddsmoothmenu-v ul{
+margin: 0;
+padding: 0;
+width: 206px; /* Main Menu Item widths */
+*width: 204px;
+list-style-type: none;
+border-bottom: 1px solid #ccc;
+background: #191919 url(../template/images/bgmenu.gif) repeat-x center top;
+}
+ 
+.ddsmoothmenu-v ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px 0px 6px 10px;
+border-top: 1px solid #000000;
+}
+
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{
+/* background: #3d3d3d url(arrow.gif) no-repeat 8px center; /*background of menu items (default state)*/
+color: #fff;
+}
+
+
+.ddsmoothmenu-v ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+color: red;
+}
+
+.ddsmoothmenu-v ul li a:hover{
+color: red;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+position: absolute;
+width: 200px; /*Sub Menu Items width */
+top: 0;
+font-weight: normal;
+visibility: hidden;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+/* End */

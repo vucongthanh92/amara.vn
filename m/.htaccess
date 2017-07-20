@@ -1,0 +1,100 @@
+Options +FollowSymLinks
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.dealhot\.vn [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteRule ^(.*)$ http://dealhot.vn/$1 [L,R]
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteBase /
+RewriteRule \.(css|js|jpg|jpeg|png|gif|ico)$ - [L]
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+##############################  giao dien nguoi dung
+RewriteRule ^home.html$  /index.php [L]
+
+RewriteRule ^tin-moi.html$  /index.php?mod=tin-tuc&act=danh-muc&id=tin-moi [L]
+RewriteRule ^tin-moi.html/([a-z0-9]*)$  /index.php?mod=tin-tuc&act=danh-muc&id=tin-moi&p=$1 [L]
+
+
+RewriteRule ^([a-zA-Z0-9-]*)-([0-9]*).html$    /index.php?mod=sanpham&act=danhmuc&id=$2 [L]
+RewriteRule ^([a-zA-Z0-9-]*).htm$    /index.php?mod=sanpham&act=chitiet&id=$1 [L]
+RewriteRule ^([a-zA-Z0-9-]*)-([0-9]*).html/([a-z0-9]*)$    /index.php?mod=sanpham&act=danhmuc&id=$2&p=$3 [L]
+RewriteRule ^city/([a-zA-Z0-9-]*).html$    /index.php?mod=deal&act=city&id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)_([0-9]*)/buy.html$    /index.php?mod=payment&act=addcart&id=$3 [L]
+RewriteRule ^gio-hang.html$    /index.php?mod=payment&act=showcart [L]
+RewriteRule ^payment/delcart/([0-9]*)-gio-hang.htm     /index.php?mod=payment&act=delcart&id=$1 [L] 
+
+RewriteRule ^dat-hang.html$    /index.php?mod=payment&act=showorder [L]
+
+RewriteRule ^tim-kiem.html$    /index.php?mod=sanpham&act=timkiem [L]
+RewriteRule ^tim-kiem.html/([a-zA-Z0-9-]*)/([a-z0-9]*)$    /index.php?mod=sanpham&act=timkiem&tukhoa=$1&p=$2 [L]
+
+RewriteRule ^deal-noi-bat.html$    /index.php?mod=sanpham&act=dealhot [L]
+RewriteRule ^deal-noi-bat.html/([a-z0-9]*)$    /index.php?mod=sanpham&act=dealhot&p=$1 [L]
+
+
+
+RewriteRule ^deal-hom-nay.html$    /index.php?mod=sanpham&act=dealmoi [L]
+RewriteRule ^deal-hom-nay.html/([a-z0-9]*)$    /index.php?mod=sanpham&act=dealmoi&p=$1 [L]
+
+RewriteRule ^deal-sap-het-han.html$    /index.php?mod=sanpham&act=dealend [L]
+RewriteRule ^deal-sap-het-han.html/([a-z0-9]*)$    /index.php?mod=sanpham&act=dealend&p=$1 [L]
+
+RewriteRule ^dang-nhap.html$      /index.php?mod=thanhvien&act=dangnhap [L]
+RewriteRule ^dang-ky.html$      /index.php?mod=thanhvien&act=dangky [L]
+RewriteRule ^trang-ca-nhan.html$       /index.php?mod=thanhvien&act=canhan [L]
+RewriteRule ^thoat.html$       /index.php?mod=thanhvien&act=logout [L]
+RewriteRule ^doi-mat-khau.html$       /index.php?mod=thanhvien&act=changepassword [L]
+RewriteRule ^doi-anh-dai-dien.html$       /index.php?mod=thanhvien&act=avatar [L]
+RewriteRule ^lich-su-giao-dich.html$       /index.php?mod=thanhvien&act=order [L]
+RewriteRule ^quen-mat-khau.html$       /index.php?mod=thanhvien&act=forgot [L]
+
+RewriteRule ^([a-zA-Z0-9-]*)-n([0-9]*).html$    /index.php?mod=tin-tuc&act=chi-tiet&id=$2 [L]
+
+##############################  admin
+#-------------
+RewriteRule ^admincp/([a-zA-Z]*)/([a-zA-Z]*)$    /admincp/index.php?mod=$1&act=$2 [L]
+RewriteRule ^admincp/([a-zA-Z]*)/([a-zA-Z]*)/([0-9]*)$    /admincp/index.php?mod=$1&act=$2&id=$3 [L]
+RewriteRule ^admincp/([a-zA-Z]*)/([a-zA-Z]*)/([a-z0-9]*)$    /admincp/index.php?mod=$1&act=$2&p=$3 [L]
+RewriteRule ^admincp/([a-zA-Z]*)/([a-zA-Z]*)/([0-9]*)/([a-z0-9]*)$    /admincp/index.php?mod=$1&act=$2&id=$3&p=$4 [L]
+
+#--------------logout
+RewriteRule ^admincp/logout$    /admincp/index.php?mod=logout [L]
+
+#-------------- ajax admin 
+RewriteRule ^login.php$   /admincp/login.php [L]
+RewriteRule ^getContent.php/(.*)/(.*)$    /admincp/getContent.php?nocache=$1&name=$2 [L]
+
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<Files .htaccess>
+  deny from all
+</Files>
+
+<Files .staccess>
+  deny from all
+</Files>
+
+
+# Disable .htaccess viewing from browser
+<files ~ "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</files>
+
+# Disable config.php viewing from browser
+<files ~ "\config.php$">
+    deny from all
+</files>
+
+# deny most common except .php/.html
+<FilesMatch "\.(inc|tpl|h|ihtml|sql|ini|conf|class|bin|spd|theme|module|exe)$">
+deny from all
+</FilesMatch>
+
+ErrorDocument 404 /404.php

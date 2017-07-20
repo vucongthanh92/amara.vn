@@ -1,0 +1,7 @@
+@charset "utf-8";
+.paging{ height:auto; margin:0; margin-top:10px; text-align:center; clear:both; color:#2D8B13; padding-bottom:10px;}
+.paging a {text-decoration: none;padding-bottom:4px;margin-left:3px; margin-left:5px;
+padding:2px; border:solid 1px #296DAE ; color:#296DAE;padding-left:4px; padding-right:4px;}
+.paging .current {text-decoration: none;padding-left:4px; padding-right:4px;padding-top:4px; padding-bottom:4px;margin-left:5px; color:#FFF;  font-weight:bold;background-color:#296DAE; 
+padding:2px; border:solid 1px #296DAE;  padding-left:4px; padding-right:4px; }
+.paging a:hover {background-color:#296DAE; color:#FFF;  font-weight:bold;}
